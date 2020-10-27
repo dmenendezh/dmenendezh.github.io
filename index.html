@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Chanell</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/PodcastChanell/styles/desktop/style.css">
+    <link rel="stylesheet" href="/PodcastChanell/styles/movile/style.css">
+
+</head>
+<body>
+    <header>
+        <div>
+          <img src="/PodcastChanell/images/logo.svg" alt="logo">
+        </div>     
+        <nav class="menu">
+            <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+            <label for="abrir-cerrar" class="toggle-button">
+                <span class="cerrar" title="Cerrar">Cerrar</span>
+                <span class="abrir" title="Abrir">Abrir</span>
+                <ul>
+                  <li><a href="#">EPISODIOS</a></li>
+                  <li><a href="#">NOSOTROS</a></li>   
+                  <li><a href="#">ENTREVISTA</a></li>
+                  <li><a href="#">TÓPICOS</a></li>
+                </ul>
+            </label>
+         </nav>
+    </header>
+      
+    <main>
+        <section>
+            <article class="welcome-article">
+                <h1 class="welcome-h1">Hello <span id="span-world">world</span> <span id="span-pale">pale blue dot</span><span id="span-dot">.</span></h1>
+                <h6 class="welcome-description">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</h6>
+                <div id="btn-more"><span id="btn-text">CONOCÉ MÁS</span></div>
+            </article>
+        </section>
+        <div class="grid-episodios">
+          <div class="container">
+            <h2 id="epi-title">Episodios</h2>
+            <div class="episodios episodio-one"><iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="episodios episodio-two"><iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="episodios episodio-three"><iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="episodios episodio-four"><iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            
+            <div class="history-item"><img src="/PodcastChanell/images/phone.png" alt="phone"></div>
+            <div class="history-title">
+              <h2 id="h2-title">De dónde venimos</h2>
+              <p class="p-text-one">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p> 
+              <p class="p-text-two">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-guests">
+          <h2 id="guest-title">Invitadas/os estelares</h2>
+          <div class="guest-one"><img src="/PodcastChanell/images/grace-hopper.png" alt="Grace Hopper"></div>
+          <div class="guest-two"><img src="/PodcastChanell/images/Katie-Bouman.png" alt="Katie Bouman"></div>
+          <div class="guest-three"><img src="/PodcastChanell/images/Margaret_Hamilton.png" alt="Margaret Hamilton"></div>
+          <div class="guest-four"><img src="/PodcastChanell/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Computer in the 1950s"></div>
+          <div class="guest-five"><img src="/PodcastChanell/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="First programmable general-purpose computer"></div>
+          <div class="guest-six"><img src="/PodcastChanell/images/susan-kare.png" alt="Susan Kare"></div>
+        </div>
+
+        <div class="grid-topics">
+          <h2 id="topic-title">Algunos de nuestros temas</h2>
+          <div class="topic-one">
+            <img src="/PodcastChanell/images/icon1.svg" alt="">
+            <h6 class="remote-topic">Trabajo remoto</h6>
+          </div>
+          <div class="topic-two">
+            <img src="/PodcastChanell/images/icon2.svg" alt="">
+            <h6 class="remote-topic">Repensando la programación</h6>
+          </div>
+          <div class="topic-three">
+            <img src="/PodcastChanell/images/icon3.svg" alt="">
+            <h6 class="remote-topic">Bases del código</h6>
+          </div>
+          <div class="topic-four">
+            <img src="/PodcastChanell/images/icon4.svg" alt="">
+            <h6 class="remote-topic">Seguridad informática</h6>
+          </div>
+        </div>
+
+        <div class="grid-news">
+            <h2 class="news-title">¿Querés las últimas novedades?</h2>
+            <div class="listen-item"><span id="btn-text">ESCUCHÁ LOS EPISODIOS</span></div>
+        </div>
+    </main>
+    <footer class="footer-cl">
+      <div>
+        <h3>© 2019— Hello blue pale dot</h3>
+      </div>
+      <div class="social">
+          <a href="#"><i class="fab fa-spotify"></i></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+
+      </div>
+    </footer>
+</body>
+</html>
