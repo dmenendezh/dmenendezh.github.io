@@ -59,6 +59,10 @@
         padding: 0.5em;
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         background: #0000EC; }
+        header nav ul li a {
+          color: #060A24;
+          font-weight: normal;
+          text-decoration: none; }
         header nav ul li a:hover {
           display: block;
           width: 100%;
@@ -75,7 +79,8 @@
           font-size: 16px;
           color: rgba(6, 10, 36, 0.56);
           letter-spacing: 0;
-          line-height: 28px; }
+          line-height: 28px;
+          font-weight: normal; }
     header nav:hover ul {
       display: block; }
     header nav input#abrir-cerrar {

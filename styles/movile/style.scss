@@ -70,6 +70,11 @@ monospace;
 					padding: 0.5em;
 					border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 					background: #0000EC;
+					a{
+						color: #060A24;
+						font-weight: normal;
+						text-decoration:none;
+					}
 
 					a:hover {
 						display: block;
@@ -90,6 +95,8 @@ monospace;
 						color: rgba(6,10,36,0.56);
 						letter-spacing: 0;
 						line-height: 28px;
+						font-weight: normal;
+
 					}
 				}
 			}
