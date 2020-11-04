@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 @font-face {
   font-family: 'IBM Plex Mono', monospace;
@@ -21,22 +22,28 @@
 @media (min-width: 481px) and (max-width: 1550px) {
   header {
     max-width: 90em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 3em;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     /*fuente*/
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     color: #060A24;
     letter-spacing: 0;
-    line-height: 28px;
-    /*menu*/ }
+    line-height: 28px; }
     header a {
       text-decoration: none; }
     header div {
       padding: .5em 1em; }
     header nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; }
       header nav ul li {
         padding: 0em 1em;
@@ -50,7 +57,8 @@
           color: #00F3BB;
           font-weight: bold;
           letter-spacing: 0;
-          line-height: 28px; }
+          line-height: 28px;
+          text-decoration: line-through; }
         header nav ul li a:active {
           display: block;
           width: 100%;
@@ -58,11 +66,11 @@
           font-size: 16px;
           color: rgba(6, 10, 36, 0.56);
           letter-spacing: 0;
-          line-height: 28px; }
-    header .label,
-    header span {
+          line-height: 28px;
+          text-decoration: line-through; }
+    header input {
       display: none; }
-    header #abrir-cerrar {
+    header .abrir, header .cerrar {
       display: none; }
 
   main {
@@ -72,6 +80,8 @@
       margin-left: 13.9%;
       /*border: 1px solid black; ayuda visual*/ }
       main .welcome-article .welcome-h1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         font-family: 'IBM Plex Mono', monospace;
         font-size: 64px;
@@ -161,9 +171,15 @@
     main .flex-history {
       height: 3.125em; }
       main .flex-history .history-title {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         height: 450px; }
         main .flex-history .history-title #h2-title h2 {
           height: 62px;
@@ -316,8 +332,12 @@
 
   .footer-cl {
     max-width: 90em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 3em; }
     .footer-cl h3 {
       font-family: 'IBM Plex Mono', monospace;

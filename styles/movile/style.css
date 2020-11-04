@@ -81,67 +81,30 @@
           letter-spacing: 0;
           line-height: 28px;
           font-weight: normal; }
-    header nav:hover ul {
-      display: block; }
-    header nav input#abrir-cerrar {
-      visibility: hidden;
-      position: absolute;
-      top: -9999px; }
-    header nav .toggle-button {
+    header nav input:checked ~ ul {
       display: block;
-      width: 30px;
-      height: 30px;
-      position: relative;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      color: #060A24; }
-    header nav .toggle-button:before,
-    header nav .toggle-button:after {
-      position: absolute;
-      display: block;
-      content: " ";
-      width: calc(100% / 2);
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      left: calc(100% / 4);
-      -webkit-transition: all 0.2s ease-out;
-      transition: all 0.2s ease-out; }
-    header nav .toggle-button:before {
-      top: calc(100% / 4);
-      height: calc(100% / 4);
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      background-color: transparent; }
-    header nav .toggle-button:after {
-      height: 1px;
-      background-color: black;
-      bottom: calc(100% / 4); }
-    header nav input#abrir-cerrar:checked + .toggle-button:before,
-    header nav input#abrir-cerrar:checked + .toggle-button:after {
-      top: calc(100% / 2);
-      height: 1px;
-      border-bottom: 0; }
-    header nav input#abrir-cerrar:checked + .toggle-button:before {
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg); }
-    header nav input#abrir-cerrar:checked + .toggle-button:after {
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
-    header nav .abrir,
-    header nav .cerrar {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      text-indent: -9999px; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: right;
+          -ms-flex-pack: right;
+              justify-content: right;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      background-color: #0000EC;
+      width: 98vw;
+      height: 224px;
+      right: 0; }
+    header nav input {
+      display: none; }
     header nav .abrir {
       display: block; }
     header nav .cerrar {
       display: none; }
-    header nav input#abrir-cerrar:checked + .toggle-button .abrir {
+    header nav input:checked ~ .abrir {
       display: none; }
-    header nav input#abrir-cerrar:checked + .toggle-button .cerrar {
+    header nav input:checked ~ .cerrar {
       display: block; }
 
   .welcome-article {

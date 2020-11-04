@@ -61,7 +61,9 @@
 						font-weight: bold;
 						letter-spacing: 0;
 						line-height: 28px;
+						text-decoration:line-through;
 					}
+					
 					a:active {
 						display: block;
 						width: 100%;
@@ -70,19 +72,19 @@
 						color: rgba(6,10,36,0.56);
 						letter-spacing: 0;
 						line-height: 28px;
+						text-decoration:line-through;
 					}
 				}
 			}
 		}
-		/*menu*/
-		.label,
-		span {
+		input{
 			display: none;
 		}
-		#abrir-cerrar {
+		.abrir,.cerrar{
 			display: none;
-		}
+		} 
 	}
+
 	main {
 		max-width: 90em;
 		.welcome-article {
