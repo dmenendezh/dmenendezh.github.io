@@ -254,6 +254,7 @@
       grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: minmax(auto, auto);
       justify-items: center; }
+      
       main .grid-topics #topic-title {
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 48px;

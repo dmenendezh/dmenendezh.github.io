@@ -131,6 +131,7 @@
         color: #0000EC;
         grid-column: 4;
         grid-row: 2; }
+        
       .welcome-article .welcome-h1 #span-pale {
         grid-column: 1 / 4;
         grid-row: 2; }
